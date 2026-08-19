@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+.header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-left: 10px;
+    margin-right: 10px;
+    align-items: center;
+}    
+
+body {
+    background-color: rgb(110, 110, 250);
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    min-height: 100vh;
+    border-left: none;
+    border-right: none;
+    margin: 0;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-color: rgb(190, 190, 190);
+    border-width: 1px;
+    border-style: solid;
+    min-height: 610px;
+    border-left: none;
+    border-right: none;
+}
+
+.body {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.first {
+    display: flex;
+    justify-content: center;
+    padding-right: 200px;
+    padding-left: 20px;
+    flex-direction: column;
+    border-color: rgb(190, 190, 190);
+    border-right: 1px;
+    border-style: solid;
+    border-top: 0;
+    border-left: 0;
+    border-bottom: 0;
+}
+
+.huge {
+    font-size: 50px;
+    object-fit: fill;
+    margin-bottom: 0;
+}
+
+.second {
+    border: rgb(190, 190, 190);
+    border-style: solid;
+    display: grid;
+    border-left: 1px;
+}
+
+.sent1 {
+    font-size: 20px;
+    margin-bottom: 0;
+    margin-left: 10px;
+}
+
+.sent2 {
+    font-size: 13px;
+    margin-top: 0;
+    margin-left: 10px;
+}
+
+.bottoms {
+    align-self: end;
+}
+
+.second-footer {
+    text-align: right;
+    padding-right: 20px;
+}
+
+.img {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    mix-blend-mode: screen;
+    filter: invert(1);
+    margin: 15px;
+}
+
+.img2 {
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+    mix-blend-mode: screen;
+    justify-self: right;
+    filter: invert(1);
+}
+
+.stats {
+    margin: 15px;
+    justify-self: right;
+    display: grid;
+    font-size: 30px;
+}
+
+.top {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+@media (max-width: 450px) {
+    body,
+    main,
+    .body
+        { 
+        grid-template-columns: 1fr;
+    }
+}
